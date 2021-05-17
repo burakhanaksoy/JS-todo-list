@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(255, 163, 42, 0.26);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.list-name {
+  color: rgb(194, 85, 85);
+  font-size: 3.5rem;
+}
+
+.list-name,
+form {
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  color: black;
+  border: none;
+  background: white;
+  font-size: 1.25rem;
+}
+
+form button {
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: rgba(255, 163, 42, 0.26);
+}
+
+form button:hover {
+  /* width: 100%;
+  min-width: 10px; 
+  max-width: 40px; */
+  color: black;
+  background: rgba(255, 163, 42, 0.26);
+}
+
+/* Styling to do buttons */
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Horizontal alignment -> justify content
+    * vertical alignment -> align-items
+     */
+}
+
+.todo-list {
+  list-style-type: none;
+  min-width: 30%;
+}
+
+.todo {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo li {
+  flex: 1;
+  background-color: white;
+  border: none;
+  padding: 0.3rem 0.5rem;
+}
+
+.erase-button,
+.check-button {
+  border: none;
+  background-color: rgba(161, 127, 62, 0.623);
+  color: white;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+.erase-button:hover,
+.check-button:hover {
+  color: black;
+  background: rgba(255, 163, 42, 0.26);
+}
+
+.fa-trash,
+.fa-check-square {
+  pointer-events: none;
+}
+
+.todo.completed li {
+    background:rgb(84, 233, 84);
+    text-decoration:line-through;
+}
